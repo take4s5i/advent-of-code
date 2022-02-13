@@ -26,14 +26,14 @@ where
 }
 
 #[derive(PartialEq, Eq, Debug)]
-enum Command {
+pub enum Command {
     Forward(usize),
     Up(usize),
     Down(usize),
 }
 
 impl Command {
-    fn set_amount(&mut self, v: usize) {
+    pub fn set_amount(&mut self, v: usize) {
         match self {
             Command::Forward(_) => *self = Command::Forward(v),
             Command::Up(_) => *self = Command::Up(v),
@@ -43,7 +43,7 @@ impl Command {
 }
 
 #[derive(PartialEq, Eq, Debug)]
-enum CommandParseError {
+pub enum CommandParseError {
     InvalidFormat,
 }
 

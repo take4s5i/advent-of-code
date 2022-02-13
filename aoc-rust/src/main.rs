@@ -32,6 +32,7 @@ fn get_map() -> HashMap<String, fn()> {
     return make_map! (
         "y2021/day01" => y2021::day01::solve,
         "y2021/day01_2" => y2021::day01_2::solve,
-        "y2021/day02" => y2021::day02::solve
+        "y2021/day02" => y2021::day02::solve,
+        "y2021/day02_2" => y2021::day02_2::solve
     );
 }
