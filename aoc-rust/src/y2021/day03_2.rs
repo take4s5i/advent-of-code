@@ -1,4 +1,3 @@
-use super::day03::make_iterator;
 use std::io::BufRead;
 
 pub fn solve() {

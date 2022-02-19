@@ -44,7 +44,7 @@ where
     Ok(gamma * epsilon)
 }
 
-pub fn make_iterator<'a, T, I>(iter: I) -> impl Iterator<Item = Result<Vec<u8>, String>> + 'a
+fn make_iterator<'a, T, I>(iter: I) -> impl Iterator<Item = Result<Vec<u8>, String>> + 'a
 where
     I: Iterator<Item = T> + 'a,
     T: AsRef<str>,
